@@ -21,34 +21,34 @@ export const ContextSlide = () => (
     <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-surface-light-foreground mb-2">
       The problem is systemic.<br />The response had to be too.
     </h2>
-    <p className="text-text-subtle text-sm font-light max-w-[680px] mb-6">
+    <p className="text-gray-600 text-base font-light max-w-[680px] mb-6">
       Young Kenyans face fragmented, stigmatised access to sexual health information. Rafikey was built within a 5-org coalition to deliver AI-powered, youth-first SRHR support — grounded in local data and clinical expertise.
     </p>
 
     <div className="bg-secondary/10 border border-secondary/30 rounded-lg px-4 py-3 flex items-start gap-3 mb-6 max-w-[680px]">
       <AlertTriangle className="w-4 h-4 text-secondary flex-shrink-0 mt-0.5" />
-      <p className="text-xs text-surface-light-foreground leading-relaxed">
+      <p className="text-sm text-gray-700 leading-relaxed">
         <strong>Why this matters:</strong> Young people are 15–24 in Kenya's health system — yet they account for a disproportionate share of new HIV infections, unplanned pregnancies, and GBV cases. Most digital health tools ignore them.
       </p>
     </div>
 
     <div className="grid grid-cols-2 lg:grid-cols-4 gap-3 mb-8">
       {stats.map(s => (
-        <div key={s.label} className="bg-surface-light-foreground rounded-xl p-4 text-center">
+        <div key={s.label} className="bg-white rounded-xl p-4 text-center shadow-sm border border-gray-200">
           <div className="text-2xl font-extrabold text-primary leading-none">{s.value}</div>
-          <div className="text-[0.65rem] text-foreground/60 mt-2 leading-snug">{s.label}</div>
-          <div className="font-mono text-[0.55rem] text-foreground/30 mt-1">{s.source}</div>
+          <div className="text-base text-gray-800 mt-2 leading-snug font-medium">{s.label}</div>
+          <div className="font-mono text-[0.75rem] text-gray-500 mt-1">{s.source}</div>
         </div>
       ))}
     </div>
 
-    <p className="font-mono text-[0.6rem] text-primary uppercase tracking-widest mb-3">Coalition Partners</p>
+    <p className="font-mono text-[0.75rem] text-primary uppercase tracking-widest mb-3 font-bold">Coalition Partners</p>
     <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
       {partners.map(p => (
-        <div key={p.name} className={`bg-surface-light rounded-xl p-3 border border-border-light border-t-[3px] ${p.color}`}>
-          <div className="text-xs font-bold text-surface-light-foreground mb-0.5">{p.name}</div>
-          <div className="font-mono text-[0.55rem] text-primary uppercase tracking-wider mb-1">{p.role}</div>
-          <div className="text-[0.65rem] text-text-subtle leading-snug">{p.desc}</div>
+        <div key={p.name} className={`bg-white rounded-xl p-3 border border-gray-200 shadow-sm border-t-[3px] ${p.color}`}>
+          <div className="text-sm font-bold text-gray-900 mb-0.5">{p.name}</div>
+          <div className="font-mono text-[0.75rem] text-primary uppercase tracking-wider mb-1">{p.role}</div>
+          <div className="text-sm text-gray-600 leading-snug">{p.desc}</div>
         </div>
       ))}
     </div>

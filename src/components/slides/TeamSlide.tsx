@@ -73,34 +73,34 @@ export const TeamSlide = () => (
     <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-surface-light-foreground mb-2">
       The people who built it.
     </h2>
-    <p className="text-text-subtle text-sm font-light max-w-[680px] mb-8">
+    <p className="text-gray-600 text-base font-light max-w-[680px] mb-8">
       Engineers, designers, researchers, and coordinators — each bringing craft and purpose to Kenya's first youth-focused AI SRHR chatbot.
     </p>
 
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {team.map(m => (
-        <div key={m.name} className="rounded-2xl overflow-hidden border border-border-light bg-surface-light flex flex-col">
+        <div key={m.name} className="rounded-2xl overflow-hidden border border-gray-200 bg-white flex flex-col shadow-sm">
           <div className={`${m.headerColor} p-5 flex items-center gap-3`}>
             {m.image ? (
-              <img src={m.image} alt={m.name} className="w-14 h-14 rounded-full object-cover border-2 border-foreground/25 flex-shrink-0" />
+              <img src={m.image} alt={`Photo of ${m.name}`} className="w-14 h-14 rounded-full object-cover border-2 border-white/30 flex-shrink-0" />
             ) : (
-              <div className="w-14 h-14 rounded-full bg-foreground/20 border-2 border-foreground/25 flex items-center justify-center flex-shrink-0">
-                <span className="text-sm font-bold">{m.initials}</span>
+              <div className="w-14 h-14 rounded-full bg-white/30 border-2 border-white/30 flex items-center justify-center flex-shrink-0">
+                <span className="text-sm font-bold text-white">{m.initials}</span>
               </div>
             )}
             <div>
-              <div className="text-sm font-extrabold leading-tight">{m.name}</div>
-              <div className="font-mono text-[0.58rem] text-foreground/60 uppercase tracking-wider mt-0.5">{m.title}</div>
+              <div className="text-base font-bold leading-tight text-white">{m.name}</div>
+              <div className="font-mono text-[0.75rem] text-white font-semibold uppercase tracking-wider mt-0.5">{m.title}</div>
             </div>
           </div>
           <div className="p-4 flex-1 flex flex-col">
-            <div className="font-mono text-[0.58rem] text-primary uppercase tracking-wider mb-1">Role on Rafikey</div>
-            <div className="text-xs font-semibold text-surface-light-foreground mb-2">{m.role}</div>
-            <p className="text-xs text-text-subtle leading-relaxed flex-1">{m.desc}</p>
+            <div className="font-mono text-[0.75rem] text-primary uppercase tracking-wider mb-1 font-bold">Role on Rafikey</div>
+            <div className="text-base font-semibold text-gray-900 mb-2">{m.role}</div>
+            <p className="text-base text-gray-700 leading-relaxed flex-1">{m.desc}</p>
             {m.quote && (
-              <div className="border-t border-border-light pt-3 mt-3">
-                <p className="text-xs text-surface-light-foreground/70 italic leading-relaxed mb-1">"{m.quote}"</p>
-                <div className="font-mono text-[0.58rem] text-primary uppercase tracking-wider">{m.quoteLabel}</div>
+              <div className="border-t border-gray-200 pt-3 mt-3">
+                <p className="text-base text-gray-800 italic leading-relaxed mb-2">"{m.quote}"</p>
+                <div className="font-mono text-[0.75rem] text-primary uppercase tracking-wider font-bold">{m.quoteLabel}</div>
               </div>
             )}
           </div>

@@ -13,7 +13,7 @@ export const DesignSlide = () => (
     <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-surface-light-foreground mb-2">
       Designed for trust.<br />Built for independence.
     </h2>
-    <p className="text-text-subtle text-sm font-light max-w-[680px] mb-6">
+    <p className="text-surface-light-foreground/70 text-sm font-light max-w-[680px] mb-6">
       Every design decision was shaped by one question: will this make a young person feel safe enough to ask their real question?
     </p>
 
@@ -24,13 +24,13 @@ export const DesignSlide = () => (
             <f.icon className={`w-4 h-4 ${f.color}`} />
             <span className="text-sm font-bold text-surface-light-foreground">{f.title}</span>
           </div>
-          <p className="text-xs text-text-subtle leading-relaxed">{f.desc}</p>
+          <p className="text-sm text-surface-light-foreground/70 leading-relaxed">{f.desc}</p>
         </div>
       ))}
     </div>
 
     {/* Video placeholders */}
-    <p className="font-mono text-[0.6rem] text-primary uppercase tracking-widest mb-3">Product Walkthroughs</p>
+    <p className="font-mono text-[0.65rem] text-primary uppercase tracking-widest mb-3">Product Walkthroughs</p>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
       {[
         { title: "App Walkthrough", desc: "User-facing chatbot demo", detail: "Full walkthrough of the Rafikey chatbot — topic selection, service finder, privacy mode, and crisis escalation flow.", bg: "bg-background" },
@@ -42,24 +42,24 @@ export const DesignSlide = () => (
               <Play className="w-5 h-5 text-primary fill-primary ml-0.5" />
             </div>
             <div className="text-center">
-              <div className="text-sm font-bold">{v.title}</div>
-              <div className="text-[0.67rem] text-foreground/45 mt-0.5">{v.desc}</div>
+              <div className="text-sm font-bold text-white">{v.title}</div>
+              <div className="text-sm text-white/70 mt-0.5">{v.desc}</div>
             </div>
-            <div className="font-mono text-[0.6rem] text-foreground/25 border border-dashed border-foreground/15 px-3 py-1 rounded-full">↑ Add video link here</div>
+            <div className="font-mono text-[0.65rem] text-white/50 border border-dashed border-white/15 px-3 py-1 rounded-full">↑ Add video link here</div>
           </div>
           <div className="bg-surface-light p-3 border-t border-border-light">
-            <p className="text-xs text-text-subtle leading-snug">{v.detail}</p>
+            <p className="text-sm text-surface-light-foreground/70 leading-snug">{v.detail}</p>
           </div>
         </div>
       ))}
     </div>
 
     {/* Tech stack */}
-    <div className="bg-background rounded-xl p-4">
-      <div className="font-mono text-[0.6rem] text-secondary uppercase tracking-wider mb-3">Tech Stack</div>
-      <div className="flex flex-wrap gap-1.5">
+    <div className="bg-gray-100 rounded-xl p-4 border border-gray-200">
+      <div className="font-mono text-[0.75rem] text-gray-600 uppercase tracking-wider mb-3 font-bold">Tech Stack</div>
+      <div className="flex flex-wrap gap-2">
         {["Python", "Vue.js", "PostgreSQL 17", "OpenAI API", "Render", "GitHub", "PWA"].map(t => (
-          <span key={t} className="text-[0.62rem] bg-foreground/10 text-foreground/75 px-2 py-0.5 rounded-md">{t}</span>
+          <span key={t} className="text-sm bg-gray-800 text-white px-3 py-1.5 rounded-md font-medium">{t}</span>
         ))}
       </div>
     </div>

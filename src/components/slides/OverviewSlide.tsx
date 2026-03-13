@@ -15,7 +15,7 @@ export const OverviewSlide = () => (
     <h2 className="text-3xl md:text-4xl font-extrabold leading-tight mb-2">
       Not a chatbot.<br />A youth health companion.
     </h2>
-    <p className="text-text-subtle text-sm font-light max-w-[680px] mb-8">
+    <p className="text-foreground/70 text-sm font-light max-w-[680px] mb-8">
       Rafikey combines AI, verified SRHR content, and a youth-first design to give young Kenyans a private, trusted space to explore their sexual and reproductive health.
     </p>
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -23,9 +23,9 @@ export const OverviewSlide = () => (
         <div key={f.title} className="content-card-dark">
           <div className="flex items-center gap-2 mb-2">
             <f.icon className={`w-4 h-4 ${f.color}`} />
-            <span className="text-sm font-bold">{f.title}</span>
+            <span className="text-sm font-bold text-white">{f.title}</span>
           </div>
-          <p className="text-xs text-foreground/50 leading-relaxed">{f.desc}</p>
+          <p className="text-sm text-white/90 leading-relaxed">{f.desc}</p>
         </div>
       ))}
     </div>

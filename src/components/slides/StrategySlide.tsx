@@ -23,7 +23,7 @@ export const StrategySlide = () => {
       <h2 className="text-3xl md:text-4xl font-extrabold leading-tight mb-2">
         Ship fast. Learn faster.<br />Scale with evidence.
       </h2>
-      <p className="text-foreground/50 text-sm font-light max-w-[680px] mb-8">
+      <p className="text-foreground/90 text-sm font-light max-w-[680px] mb-8">
         A phased approach: get a working product into young people's hands, test rigorously, then expand channels and intelligence.
       </p>
 
@@ -31,13 +31,13 @@ export const StrategySlide = () => {
         {phases.map(p => (
           <div key={p.phase} className={`content-card-dark border-t-[3px] ${p.color}`}>
             <div className="flex items-center gap-2 mb-3">
-              <span className="font-mono text-[0.6rem] text-primary uppercase tracking-wider">{p.phase}</span>
-              <span className="bg-foreground/10 text-foreground/60 text-[0.55rem] px-2 py-0.5 rounded-full">{p.label}</span>
+              <span className="font-mono text-[0.75rem] text-primary uppercase tracking-wider">{p.phase}</span>
+              <span className="bg-foreground/10 text-foreground/90 text-[0.75rem] px-2 py-0.5 rounded-full">{p.label}</span>
             </div>
-            <div className="font-mono text-[0.55rem] text-foreground/30 mb-3">{p.period}</div>
+            <div className="font-mono text-[0.75rem] text-foreground/80 mb-3">{p.period}</div>
             <ul className="space-y-1.5">
               {p.items.map(item => (
-                <li key={item} className="text-xs text-foreground/65 flex items-start gap-2">
+                <li key={item} className="text-sm text-foreground/90 flex items-start gap-2">
                   <span className="w-1 h-1 rounded-full bg-primary mt-1.5 flex-shrink-0" />
                   {item}
                 </li>
@@ -48,10 +48,10 @@ export const StrategySlide = () => {
       </div>
 
       <div className="content-card-dark border-l-[3px] border-l-primary max-w-2xl">
-        <p className="text-xs text-foreground/70 italic leading-relaxed mb-2">
+        <p className="text-sm text-foreground/80 italic leading-relaxed mb-2">
           "The goal wasn't perfection — it was getting something real into the hands of real young people, fast enough to learn from them before we scaled."
         </p>
-        <div className="font-mono text-[0.58rem] text-primary uppercase tracking-wider">On the product philosophy</div>
+        <div className="font-mono text-[0.75rem] text-primary uppercase tracking-wider">On the product philosophy</div>
       </div>
     </div>
   );

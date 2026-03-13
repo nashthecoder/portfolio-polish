@@ -51,13 +51,13 @@ export const PersonasSlide = () => (
     <h2 className="text-3xl md:text-4xl font-extrabold leading-tight text-surface-light-foreground mb-2">
       Four personas. One platform.
     </h2>
-    <p className="text-text-subtle text-sm font-light max-w-[680px] mb-3">
+    <p className="text-surface-light-foreground/70 text-sm font-light max-w-[680px] mb-3">
       Research-grounded personas representing the diversity of young Kenyans Rafikey was built to serve.
     </p>
 
     <div className="bg-secondary/10 border border-secondary rounded-lg px-4 py-3 flex items-start gap-3 mb-6 max-w-[680px]">
       <Target className="w-4 h-4 text-secondary flex-shrink-0 mt-0.5" />
-      <p className="text-xs text-surface-light-foreground/80 leading-relaxed">
+      <p className="text-sm text-surface-light-foreground leading-relaxed">
         <strong>MVP Design Focus:</strong> The initial product was designed primarily for <strong>Kaka</strong> and <strong>Akoth</strong> — urban, smartphone-owning young people. Twiga and Aisha represent Phase 2 expansion targets.
       </p>
     </div>
@@ -69,27 +69,27 @@ export const PersonasSlide = () => (
           className={`rounded-2xl overflow-hidden border flex flex-col relative ${p.isMvp ? 'border-primary shadow-[0_0_0_2px_hsl(var(--primary))]' : 'border-border-light'}`}
         >
           {p.isMvp && (
-            <div className="absolute top-3 right-3 bg-primary text-primary-foreground font-mono text-[0.55rem] uppercase tracking-wider px-2 py-0.5 rounded-full z-10">
+            <div className="absolute top-3 right-3 bg-primary text-primary-foreground font-mono text-[0.65rem] uppercase tracking-wider px-2 py-0.5 rounded-full z-10">
               MVP Target
             </div>
           )}
           <div className={`${p.headerColor} p-5`}>
-            <div className="w-16 h-16 rounded-full bg-foreground/20 border-2 border-foreground/25 flex items-center justify-center mb-3">
-              <span className="text-lg font-bold">{p.initials}</span>
+            <div className="w-16 h-16 rounded-full bg-white/20 border-2 border-white/25 flex items-center justify-center mb-3">
+              <span className="text-lg font-bold text-white">{p.initials}</span>
             </div>
-            <div className="text-base font-extrabold tracking-wide">{p.name}</div>
-            <div className="font-mono text-[0.58rem] text-foreground/55 uppercase mt-0.5">{p.subtitle}</div>
+            <div className="text-base font-bold tracking-wide text-white">{p.name}</div>
+            <div className="font-mono text-[0.75rem] text-white uppercase mt-0.5">{p.subtitle}</div>
           </div>
           <div className="p-4 bg-surface-light flex-1 flex flex-col gap-2">
             <div className="flex flex-wrap gap-1">
               {[p.age, p.location, p.device, p.trait].map(tag => (
-                <span key={tag} className="text-[0.6rem] bg-accent/10 text-surface-light-foreground px-2 py-0.5 rounded-full">{tag}</span>
+                <span key={tag} className="text-[0.65rem] bg-accent/10 text-surface-light-foreground px-2 py-0.5 rounded-full">{tag}</span>
               ))}
             </div>
-            <p className="text-[0.73rem] text-text-subtle leading-relaxed">{p.desc}</p>
+            <p className="text-sm text-surface-light-foreground/70 leading-relaxed">{p.desc}</p>
             <div className="border-t border-border-light pt-2 mt-auto">
-              <div className="text-[0.62rem] font-bold text-primary mb-1">Design Impact</div>
-              <p className="text-[0.68rem] text-surface-light-foreground/80 leading-snug">{p.designImpact}</p>
+              <div className="text-sm font-bold text-primary mb-1">Design Impact</div>
+              <p className="text-sm text-surface-light-foreground/80 leading-snug">{p.designImpact}</p>
             </div>
           </div>
         </div>

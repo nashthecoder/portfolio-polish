@@ -5,7 +5,6 @@ import { OverviewSlide } from "@/components/slides/OverviewSlide";
 import { ContextSlide } from "@/components/slides/ContextSlide";
 import { PersonasSlide } from "@/components/slides/PersonasSlide";
 import { ResearchSlide } from "@/components/slides/ResearchSlide";
-import { StrategySlide } from "@/components/slides/StrategySlide";
 import { DesignSlide } from "@/components/slides/DesignSlide";
 import { TestingSlide } from "@/components/slides/TestingSlide";
 import { OutcomesSlide } from "@/components/slides/OutcomesSlide";
@@ -19,7 +18,6 @@ const slides = [
   ContextSlide,
   PersonasSlide,
   ResearchSlide,
-  StrategySlide,
   DesignSlide,
   TestingSlide,
   OutcomesSlide,
@@ -46,16 +44,21 @@ const Index = () => {
 
   return (
     <div className="h-screen overflow-hidden bg-background">
+      <a href="#main-content" className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-50 focus:px-4 focus:py-2 focus:bg-primary focus:text-primary-foreground focus:rounded-md">
+        Skip to content
+      </a>
       <SlideNav currentPage={currentPage} totalPages={slides.length} onNavigate={goTo} />
 
-      {slides.map((SlideComponent, i) => (
-        <div
-          key={i}
-          className={cn("page-slide", currentPage === i && "active")}
-        >
-          <SlideComponent />
-        </div>
-      ))}
+      <main id="main-content" role="main">
+        {slides.map((SlideComponent, i) => (
+          <div
+            key={i}
+            className={cn("page-slide", currentPage === i && "active")}
+          >
+            <SlideComponent />
+          </div>
+        ))}
+      </main>
     </div>
   );
 };
