@@ -8,11 +8,13 @@ const stats = [
 ];
 
 const partners = [
+  { name: "Africa Media Trust (AMT)", role: "Media Partner", desc: "Youth-focused media engagement & outreach", color: "border-t-primary" },
+  { name: "SRHR Kenya", role: "SRHR Advocacy", desc: "Sexual reproductive health rights expertise", color: "border-t-secondary" },
+  { name: "Imara TV", role: "Media Partner", desc: "Digital content & youth storytelling", color: "border-t-accent" },
   { name: "LVCT Health", role: "Lead Partner", desc: "CSE expertise, structured referral system", color: "border-t-primary" },
-  { name: "NairoBits Trust", role: "Content & Tech", desc: "iAccess hub, youth 10–24, AI expertise", color: "border-t-secondary" },
+  { name: "PSK", role: "Service Partner", desc: "Product delivery & direct service links", color: "border-t-secondary" },
+  { name: "TIKO", role: "Service Partner", desc: "Digital health service platform", color: "border-t-accent" },
   { name: "AYARHEP", role: "HIV Advocacy", desc: "Peer educators, community health system", color: "border-t-primary" },
-  { name: "PSK · TIKO", role: "Service Partners", desc: "Product delivery & direct service links", color: "border-t-accent" },
-  { name: "Young People", role: "Co-Creators", desc: "5 rounds · 20 YP throughout", color: "border-t-foreground" },
 ];
 
 export const ContextSlide = () => (
@@ -43,7 +45,7 @@ export const ContextSlide = () => (
     </div>
 
     <p className="font-mono text-[0.75rem] text-primary uppercase tracking-widest mb-3 font-bold">Coalition Partners</p>
-    <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
       {partners.map(p => (
         <div key={p.name} className={`bg-white rounded-xl p-3 border border-gray-200 shadow-sm border-t-[3px] ${p.color}`}>
           <div className="text-sm font-bold text-gray-900 mb-0.5">{p.name}</div>
