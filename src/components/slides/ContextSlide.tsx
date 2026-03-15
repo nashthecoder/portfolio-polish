@@ -24,7 +24,7 @@ export const ContextSlide = () => (
       The problem is systemic.<br />The response had to be too.
     </h2>
     <p className="text-gray-600 text-base font-light max-w-[680px] mb-6">
-      Young Kenyans face fragmented, stigmatised access to sexual health information. Rafikey was built within a 5-org coalition to deliver AI-powered, youth-first SRHR support — grounded in local data and clinical expertise.
+      Young Kenyans face fragmented, stigmatised access to sexual health information. Rafikey was built within a 7-org coalition to deliver AI-powered, youth-first SRHR support — grounded in local data and clinical expertise.
     </p>
 
     <div className="bg-secondary/10 border border-secondary/30 rounded-lg px-4 py-3 flex items-start gap-3 mb-6 max-w-[680px]">
