@@ -1,4 +1,4 @@
-import { Smartphone, Shield, Globe, Settings, Play } from "lucide-react";
+import { Smartphone, Shield, Globe, Settings } from "lucide-react";
 
 const features = [
   { icon: Smartphone, title: "PWA-First", desc: "No app store, no download, low-data accessible. Works on any smartphone browser.", color: "text-primary" },
@@ -32,26 +32,32 @@ export const DesignSlide = () => (
     {/* Video placeholders */}
     <p className="font-mono text-[0.65rem] text-primary uppercase tracking-widest mb-3">Product Walkthroughs</p>
     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
-      {[
-        { title: "App Walkthrough", desc: "User-facing chatbot demo", detail: "Full walkthrough of the Rafikey chatbot — topic selection, service finder, privacy mode, and crisis escalation flow.", bg: "bg-background" },
-        { title: "Admin Dashboard", desc: "CMS & analytics walkthrough", detail: "Coalition team using the admin back office — updating content, viewing analytics, and managing the chatbot without a developer.", bg: "bg-accent" },
-      ].map(v => (
-        <div key={v.title} className="rounded-xl overflow-hidden border border-border-light">
-          <div className={`${v.bg} p-6 flex flex-col items-center justify-center gap-3 min-h-[180px]`}>
-            <div className="w-12 h-12 rounded-full bg-primary/20 border-2 border-primary/40 flex items-center justify-center">
-              <Play className="w-5 h-5 text-primary fill-primary ml-0.5" />
-            </div>
-            <div className="text-center">
-              <div className="text-sm font-bold text-white">{v.title}</div>
-              <div className="text-sm text-white/70 mt-0.5">{v.desc}</div>
-            </div>
-            <div className="font-mono text-[0.65rem] text-white/50 border border-dashed border-white/15 px-3 py-1 rounded-full">↑ Add video link here</div>
-          </div>
-          <div className="bg-surface-light p-3 border-t border-border-light">
-            <p className="text-sm text-surface-light-foreground/70 leading-snug">{v.detail}</p>
-          </div>
+      <div className="rounded-xl overflow-hidden border border-border-light">
+        <iframe
+          src="https://drive.google.com/file/d/1ySP74wCWKq7FTUzaAHY42PiVyUJICeYH/preview"
+          className="w-full aspect-video"
+          allow="autoplay"
+          allowFullScreen
+          title="Landing Page Walkthrough"
+        />
+        <div className="bg-surface-light p-3 border-t border-border-light">
+          <p className="text-sm font-bold text-surface-light-foreground">App Walkthrough</p>
+          <p className="text-sm text-surface-light-foreground/70 leading-snug">Full walkthrough of the Rafikey chatbot — topic selection, service finder, privacy mode, and crisis escalation flow.</p>
         </div>
-      ))}
+      </div>
+      <div className="rounded-xl overflow-hidden border border-border-light">
+        <iframe
+          src="https://drive.google.com/file/d/17TNt35CkR-pn1wF9QJW5dmDgJPienuKZ/preview"
+          className="w-full aspect-video"
+          allow="autoplay"
+          allowFullScreen
+          title="Admin Dashboard Walkthrough"
+        />
+        <div className="bg-surface-light p-3 border-t border-border-light">
+          <p className="text-sm font-bold text-surface-light-foreground">Admin Dashboard</p>
+          <p className="text-sm text-surface-light-foreground/70 leading-snug">Coalition team using the admin back office — updating content, viewing analytics, and managing the chatbot without a developer.</p>
+        </div>
+      </div>
     </div>
 
     {/* Tech stack */}
