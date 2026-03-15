@@ -1,4 +1,4 @@
-import { Smartphone, Shield, Globe, Settings, Play } from "lucide-react";
+import { Smartphone, Shield, Globe, Settings } from "lucide-react";
 
 const features = [
   { icon: Smartphone, title: "PWA-First", desc: "No app store, no download, low-data accessible. Works on any smartphone browser.", color: "text-primary" },
