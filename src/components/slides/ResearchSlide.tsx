@@ -15,9 +15,9 @@ export const ResearchSlide = () => (
         <p className="text-base text-gray-700 mt-2 leading-snug">Academic papers, WHO/UNFPA guidelines, Kenya-specific SRHR reports, and existing chatbot evaluations.</p>
       </div>
       <div className="bg-white rounded-xl p-5 text-center shadow-sm border border-gray-200">
-        <div className="text-3xl font-extrabold text-secondary leading-none">5</div>
+        <div className="text-3xl font-extrabold text-secondary leading-none">7</div>
         <div className="font-mono text-[0.75rem] text-gray-800 uppercase tracking-wider mt-2 font-bold">Coalition partners</div>
-        <p className="text-base text-gray-700 mt-2 leading-snug">LVCT Health, NairoBits Trust, AYARHEP, PSK, TIKO — each contributing domain expertise and clinical validation.</p>
+        <p className="text-base text-gray-700 mt-2 leading-snug">AMT, SRHR Kenya, Imara TV, LVCT Health, PSK, TIKO, AYARHEP — each contributing domain expertise and clinical validation.</p>
       </div>
       <div className="bg-white rounded-xl p-5 text-center shadow-sm border border-gray-200">
         <div className="text-3xl font-extrabold text-primary leading-none">20</div>
