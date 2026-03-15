@@ -42,7 +42,7 @@ export const DesignSlide = () => (
         />
         <div className="bg-surface-light p-3 border-t border-border-light">
           <p className="text-sm font-bold text-surface-light-foreground">App Walkthrough</p>
-          <p className="text-sm text-surface-light-foreground/70 leading-snug">Full walkthrough of the Rafikey chatbot — topic selection, service finder, privacy mode, and crisis escalation flow.</p>
+          <p className="text-sm text-surface-light-foreground/70 leading-snug">Full walkthrough of the Rafikey chatbot — topic selection, service finder, and privacy mode.</p>
         </div>
       </div>
       <div className="rounded-xl overflow-hidden border border-border-light">
