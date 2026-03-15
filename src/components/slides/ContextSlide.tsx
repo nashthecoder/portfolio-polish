@@ -45,7 +45,7 @@ export const ContextSlide = () => (
     </div>
 
     <p className="font-mono text-[0.75rem] text-primary uppercase tracking-widest mb-3 font-bold">Coalition Partners</p>
-    <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
+    <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-3">
       {partners.map(p => (
         <div key={p.name} className={`bg-white rounded-xl p-3 border border-gray-200 shadow-sm border-t-[3px] ${p.color}`}>
           <div className="text-sm font-bold text-gray-900 mb-0.5">{p.name}</div>
