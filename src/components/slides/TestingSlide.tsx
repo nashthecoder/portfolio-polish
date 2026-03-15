@@ -39,7 +39,7 @@ export const TestingSlide = () => (
       ))}
     </div>
 
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
       <div>
         <p className="font-mono text-[0.65rem] text-primary uppercase tracking-widest mb-3">Bugs Actioned → Product Changes</p>
         <div className="flex flex-col gap-2">
@@ -54,7 +54,7 @@ export const TestingSlide = () => (
 
       <div>
         <p className="font-mono text-[0.65rem] text-primary uppercase tracking-widest mb-3">Gamification Appetite</p>
-        <div className="flex flex-col gap-2 mb-4">
+        <div className="flex flex-col gap-2">
           {gamification.map(g => (
             <div key={g.label} className="content-card py-2 px-3">
               <div className="flex justify-between items-center mb-1">
@@ -67,19 +67,19 @@ export const TestingSlide = () => (
             </div>
           ))}
         </div>
+      </div>
+    </div>
 
-        <div className="relative bg-primary/5 border border-primary/20 rounded-xl p-5 mt-2">
-          <div className="absolute -top-3 left-4 text-5xl text-primary/30 font-serif leading-none">"</div>
-          <p className="text-base italic text-surface-light-foreground leading-relaxed pl-4">
-            Also in this time and age, young people seek advice from things that don't necessarily know the real them — because that makes it easier to communicate.
-          </p>
-          <div className="mt-3 pl-4 flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-xs font-bold text-primary">VK</div>
-            <div>
-              <p className="text-sm font-bold text-surface-light-foreground">Veronicah Kimani</p>
-              <p className="font-mono text-[0.65rem] text-primary">UX/UI Designer</p>
-            </div>
-          </div>
+    <div className="relative bg-primary/5 border border-primary/20 rounded-xl p-5">
+      <div className="absolute -top-3 left-4 text-5xl text-primary/30 font-serif leading-none">"</div>
+      <p className="text-base italic text-surface-light-foreground leading-relaxed pl-4">
+        Also in this time and age, young people seek advice from things that don't necessarily know the real them — because that makes it easier to communicate.
+      </p>
+      <div className="mt-3 pl-4 flex items-center gap-2">
+        <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-xs font-bold text-primary">VK</div>
+        <div>
+          <p className="text-sm font-bold text-surface-light-foreground">Veronicah Kimani</p>
+          <p className="font-mono text-[0.65rem] text-primary">UX/UI Designer</p>
         </div>
       </div>
     </div>
