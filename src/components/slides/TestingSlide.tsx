@@ -68,11 +68,18 @@ export const TestingSlide = () => (
           ))}
         </div>
 
-        <div className="content-card border-l-[3px] border-l-primary">
-          <p className="text-sm italic text-surface-light-foreground/80 leading-relaxed mb-2">
-            "Also in this time and age, young people seek advice from things that don't necessarily know the real them — because that makes it easier to communicate."
+        <div className="relative bg-primary/5 border border-primary/20 rounded-xl p-5 mt-2">
+          <div className="absolute -top-3 left-4 text-5xl text-primary/30 font-serif leading-none">"</div>
+          <p className="text-base italic text-surface-light-foreground leading-relaxed pl-4">
+            Also in this time and age, young people seek advice from things that don't necessarily know the real them — because that makes it easier to communicate.
           </p>
-          <p className="font-mono text-[0.65rem] text-primary font-semibold">— Veronicah Kimani, UX/UI Designer</p>
+          <div className="mt-3 pl-4 flex items-center gap-2">
+            <div className="w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center text-xs font-bold text-primary">VK</div>
+            <div>
+              <p className="text-sm font-bold text-surface-light-foreground">Veronicah Kimani</p>
+              <p className="font-mono text-[0.65rem] text-primary">UX/UI Designer</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
